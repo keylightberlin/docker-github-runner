@@ -1,12 +1,223 @@
 version: "3.7"
 
 services:
-    runner:
-      image: tcardonne/github-runner:latest
-      environment:
-        RUNNER_NAME: "my-runner"
-        RUNNER_REPOSITORY_URL: ${RUNNER_REPOSITORY_URL}
-        #RUNNER_ORGANIZATION_URL: ${RUNNER_ORGANIZATION_URL}
-        GITHUB_ACCESS_TOKEN: ${GITHUB_ACCESS_TOKEN}
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+  runner11:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-11"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner12:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-12"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner13:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-13"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner14:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-14"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner15:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-15"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner16:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-16"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+
+  runner17:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-17"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner18:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-18"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner21:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-21"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner22:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-22"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner23:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-23"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner24:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-24"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner25:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-25"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner26:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-26"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+
+  runner27:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-27"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner28:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-28"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+
+  runner31:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-31"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner32:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-32"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner33:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-33"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner34:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-34"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner35:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-35"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner36:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-36"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+
+  runner37:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-37"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  runner38:
+    image: runner2
+    environment:
+      RUNNER_NAME: "action-runner-38"
+      RUNNER_ORGANIZATION_URL: "https://github.com/keylightberlin"
+      GITHUB_ACCESS_TOKEN: "5eb80e7de58e09cbc47e7b7319f53c04c7b99ebc"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+

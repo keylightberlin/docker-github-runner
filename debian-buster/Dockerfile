@@ -27,14 +27,17 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         curl \
         apt-transport-https \
         ca-certificates \
-        curl \
+        awscli \
         software-properties-common \
         git \
         sudo \
         supervisor \
         jq \
         iputils-ping \
-        build-essential
+        build-essential \
+        gcc \
+        g++ \
+        make
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN chmod 644 /etc/supervisor/conf.d/supervisord.conf
@@ -45,6 +48,11 @@ RUN curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 # Install Docker-Compose
 RUN curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
+
+# Install nodejs
+RUN sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+RUN sudo apt -y install nodejs
 
 RUN rm -rf /var/lib/apt/lists/* && \
     apt-get clean
@@ -64,3 +72,4 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+
